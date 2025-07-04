@@ -1,22 +1,32 @@
 {
-  "name": "postcss-tailwind-px-to-rem",
+  "name": "tailwindcss-postcss-px-to-rem",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [
-    "tailwindcss",
+    "postcss-tailwind-px-to-rem",
     "postcss",
+    "tailwindcss",
+    "nextjs",
     "px",
     "rem",
     "px-to-rem",
     "postcss-plugin",
     "tailwindcss-plugin"
   ],
-  "author": "fishku",
-  "license": "ISC",
+  "author": "yhsy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yhsy/tailwindcss-postcss-px-to-rem"
+  },
+  "bugs": {
+    "url": "https://github.com/yhsy/tailwindcss-postcss-px-to-rem/issues"
+  },
   "description": "A PostCSS plugin to convert px to rem in Tailwind CSS",
   "dependencies": {
     "postcss": "^8.5.6",
@@ -33,5 +43,19 @@
     "resolve-cwd": "^3.0.0",
     "ts-jest": "^29.4.0",
     "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "postcss": ">=8.0.0"
+  },
+  "files": [
+    "dist",
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
