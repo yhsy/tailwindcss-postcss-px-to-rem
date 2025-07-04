@@ -1,0 +1,37 @@
+{
+  "name": "postcss-tailwind-px-to-rem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": [
+    "tailwindcss",
+    "postcss",
+    "px",
+    "rem",
+    "px-to-rem",
+    "postcss-plugin",
+    "tailwindcss-plugin"
+  ],
+  "author": "fishku",
+  "license": "ISC",
+  "description": "A PostCSS plugin to convert px to rem in Tailwind CSS",
+  "dependencies": {
+    "postcss": "^8.5.6",
+    "postcss-value-parser": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "pkg-dir": "^9.0.0",
+    "resolve-cwd": "^3.0.0",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
+  }
+}
